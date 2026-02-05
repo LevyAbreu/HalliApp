@@ -1,7 +1,11 @@
 export const restaurantInfo = {
   name: "Malagueto - Cozinha Industrial",
+  email: "malagueto@gmail.com",
+  telefone: "(92) 91234-5678",
+  endereco: "Av. Ephigênio Salles, 1200 - Manaus, AM",
   closeHour: 14,
   closeMinutes: 30,
+  categoria: "Restaurante / Frutos do Mar",
   location: "Manaus - AM",
   logo: "https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2022%2F07%2F21%2F12%2FLogo-284290_335130_124812996_1572783973.jpg" 
 };
@@ -325,9 +329,54 @@ export const cardapio = [
   }
 ];
 
-export const initialCart = {
-  items: [{ id: "1", name: "Tambaqui só banda", quantity: 1, price: 55.00 }],
-  subtotal: 55.00,
-  taxa: "A definir"
-};
+export const estatisticasHome = [
+  { id: 1, label: "Em preparo", value: "08", type: "preparo" },
+  { id: 2, label: "Saiu para a entrega", value: "12", type: "entrega" },
+  { id: 3, label: "Atrasados", value: "01", type: "atrasado" },
+  { id: 4, label: "Finalizados", value: "42", type: "finalizado" },
+  { id: 5, label: "Faturamento Hoje", value: "R$ 1.240,00", type: "faturamento" },
+];
 
+export const pedidosRecentes = [
+  { 
+    id: '8832', 
+    status: 'preparo', 
+    time: '12 min', 
+    items: '2x Tambaqui só banda, 1x Arroz Branco', 
+    obs: 'Sem cebola no arroz.' 
+  },
+  { 
+    id: '8833', 
+    status: 'entrega', 
+    time: '5 min', 
+    items: '1x Picanha na Brasa, 1x Vinagrete, 2x Coca-Cola', 
+    obs: 'Portão azul ao lado da padaria.' 
+  },
+  { 
+    id: '8834', 
+    status: 'preparo', 
+    time: '2 min', 
+    items: '1x Matrinxã Recheada, 1x Farofa de Banana', 
+    obs: 'Sem salada' 
+  },
+  { 
+    id: '8835', 
+    status: 'atrasado', 
+    time: '45 min', 
+    items: '1x Costela no Bafo, 1x Feijão Tropeiro', 
+    obs: 'Enviar talheres descartáveis.' 
+  },
+];
+
+export const transacoesFinanceiras = [
+  { id: 'TR1020', pedido: '8832', data: '05/02/2026', valor: 118.00, metodo: 'Pix', status: 'concluido' },
+  { id: 'TR1021', pedido: '8833', data: '05/02/2026', valor: 145.50, metodo: 'Cartão de Crédito', status: 'concluido' },
+  { id: 'TR1022', pedido: '8834', data: '04/02/2026', valor: 79.90, metodo: 'Débito', status: 'concluido' },
+  { id: 'TR1023', pedido: '8835', data: '04/02/2026', valor: 210.00, metodo: 'Pix', status: 'estornado' },
+];
+
+export const metricasFinanceiras = [
+  { label: "Receita Bruta (Mês)", value: "R$ 42.850,00", growth: "+12%" },
+  { label: "Valor médio de compras", value: "R$ 88,40", growth: "+5%" },
+  { label: "Pedidos Totais(Hoje)", value: "482", growth: "+18%" },
+];

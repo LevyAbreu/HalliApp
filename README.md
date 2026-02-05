@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- Banner -->
 
-## Getting Started
+<img src="https://capsule-render.vercel.app/api?type=waving&color=121826&height=200&section=header&text=Halli%20&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=35"/>
 
-First, run the development server:
+**Halli** é uma solução de **delivery SaaS** moderna, desenvolvida para proporcionar uma experiência otimizada tanto para o cliente final quanto para a gestão do estabelecimento.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Acesse aqui:** [Halli Online](https://halli-app.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Badges
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+* 
+**Autenticação de Usuário**: login seguro via e-mail/senha e provedores sociais com Firebase Auth.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* 
+**Interface de Consumo**: experiência otimizada com filtragem dinâmica por categorias e busca em tempo real.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* 
+**Sacola Reativa**: gestão de estado global para o carrinho de compras utilizando Zustand.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+* 
+**Painel Administrativo**: dashboard completo de KPIs e navegação lateral para gestão total do restaurante.
+
+
+* 
+**Gestão de Cardápio**: CRUD completo de produtos, controle de estoque e categorias em tempo real.
+
+
+* 
+**Financeiro & Relatórios**: geração de resumos financeiros diários, semanais e mensais.
+
+
+* 
+**Logística Inteligente**: algoritmos de priorização de entregas por geofencing e distância.
+
+
+* 
+**Design Responsivo**: interface mobile-first totalmente adaptável para qualquer dispositivo (360px a 4K).
+
+
+
+---
+
+## Technologies Used
+
+<div align="center">
+<img src="[https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,firebase,figma](https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dnextjs,react,tailwind,ts,firebase,figma)" />
+</div>
+
+* 
+**Next.js 15+** (App Router) 
+
+
+* 
+**React & TypeScript** 
+
+
+* 
+**Tailwind CSS** (estilização baseada em Design Tokens) 
+
+
+* 
+**Zustand** (gerenciamento de estado global) 
+
+
+* 
+**Firebase** (Firestore Database & Authentication) 
+
+
+* 
+**Vercel** (Hosting & CI/CD) 
+
+
+
+---
+
+## Preview
+
+<div align="center">
+<h3>Interface do Cliente</h3>
+<img src="docs/assets/images/demo/client-preview.png" width="600" alt="Client Preview"/>
+
+<h3>Painel Administrativo</h3>
+<img src="docs/assets/images/demo/admin-preview.png" width="600" alt="Admin Preview"/>
+</div>
+
+---
+
+## Project Status
+
+**Em desenvolvimento** – ajustes de frontend em andamento.
+
+**Em desenvolvimento** – implementação do metodo de pagamento online.
+
+**Em seguida** – implementação do back-end e banco de dados.
+
+**Futuramente** – novas funcionalidades de integração de pagamentos e notificações via WhatsApp estão planejadas.
+
+---
+
+## Author
+
+Made by **[Levy Abreu](https://github.com/LevyAbreu)**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=121826&height=120&section=footer"/>

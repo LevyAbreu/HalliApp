@@ -37,11 +37,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background pb-20 lg:pb-0 font-sans text-foreground">
+      {/* Navbar - Utilizando a cor vinho (--secondary) */}
       <Navbar />
 
       <main className="max-w-7xl mx-auto p-4 md:p-6">
         <Header />
 
+        {/* --- FILTROS --- */}
         <div className="flex flex-col md:flex-row gap-4 items-center justify-between mt-6 relative">
           <div className="relative w-full md:w-64">
             <button 
@@ -85,6 +87,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* --- GRID DE PRODUTOS --- */}
         <div className="grid grid-cols-12 gap-0 md:gap-8 mt-8">
           <div className="col-span-12 lg:col-span-8 space-y-10">
             {categoriasParaExibir.map((cat) => (
@@ -112,6 +115,7 @@ export default function Home() {
             ))}
           </div>
 
+          {/* Coluna Lateral - Sacola Desktop */}
           <aside className="hidden lg:block lg:col-span-4">
             <div className="sticky top-24">
               <Cart items={cartItems} total={total} />
@@ -120,6 +124,7 @@ export default function Home() {
         </div>
       </main>
 
+      {/* --- LÓGICA DA SACOLA MOBILE (DRAWER) --- */}
       {isCartOpen && (
         <div 
           className="fixed inset-0 bg-brand-black/40 z-40 lg:hidden backdrop-blur-sm animate-in fade-in duration-300"
@@ -146,6 +151,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Botão Flutuante Mobile - Utilizando brand-green para ação principal */}
       {total > 0 && !isCartOpen && (
         <div className="lg:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/80 backdrop-blur-lg border-t border-halli-border z-40">
           <button 
@@ -160,12 +166,13 @@ export default function Home() {
           </button>
         </div>
       )}
+      {/* --- RODAPÉ --- */}
       <footer className="bg-brand-black border-t border-halli-border mt-20 py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 flex items-center justify-center overflow-hidden shadow-inner">
+            <div className="w-9 h-9 border border-white/20 rounded-xl bg-white/10 flex items-center justify-center overflow-hidden shadow-inner">
               <img 
-                  src="https://img.icons8.com/?size=100&id=qBglhZbOPz3l&format=png&color=FFFFFF" 
+                  src="https://st4.depositphotos.com/1496387/38299/v/450/depositphotos_382990074-stock-illustration-hand-drawn-logo-cooking-menu.jpg" 
                   alt="Logo" 
                   className="w-full h-full object-cover grayscale invert opacity-90"
               />
